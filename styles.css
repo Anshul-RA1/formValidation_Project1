@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500;600;700&display=swap");
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282a3a;
+  font-family: "Hind Siliguri", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+.container {
+  background-color: #181818;
+  border-radius: 15px;
+  box-shadow: 5px 10px 20px #181818;
+  width: 500px;
+}
+
+img {
+  height: 50px;
+  width: 150px;
+  margin-left: 125px;
+  margin-top: 0;
+}
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  font-weight: bolder;
+  color: #3e6d9c;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #3e6d9c;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-style: oblique;
+  font-weight: 900;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  font-weight: 900;
+  font-style: oblique;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #282a3a;
+  border: 2px solid #3e6d9c;
+  border-radius: 10px;
+  color: #d6e4e5;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.form button:hover {
+  background-color: #3e6d9c;
+  border: 2px solid #282a3a;
+  color: #282a3a;
+  font-style: oblique;
+  font-weight: bolder;
+}
